@@ -1,0 +1,19 @@
+name: Bug
+description: Something on a site is broken or wrong.
+type: Bug
+projects: ["echo-creative-agency/1"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong?
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to see it

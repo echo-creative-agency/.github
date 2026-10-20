@@ -1,0 +1,19 @@
+name: Change request
+description: Something on a site should be added or changed.
+type: Feature
+projects: ["echo-creative-agency/1"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What should change?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Who asked and why
+  - type: input
+    id: reference
+    attributes:
+      label: Example or reference

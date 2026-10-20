@@ -1,0 +1,11 @@
+name: Task
+description: "Agency work that is not a bug or a change: setup, maintenance, checks."
+type: Task
+projects: ["echo-creative-agency/1"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What needs to be done?
+    validations:
+      required: true
