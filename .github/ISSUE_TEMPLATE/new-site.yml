@@ -1,0 +1,61 @@
+name: New site
+description: A new client site to create from the site template.
+title: "New site: "
+type: Task
+projects: ["echo-creative-agency/1"]
+body:
+  - type: markdown
+    attributes:
+      value: "Fill in what the client gave; the rest comes out of the first session's interview."
+  - type: input
+    id: business-name
+    attributes:
+      label: Business name
+    validations:
+      required: true
+  - type: input
+    id: repository-name
+    attributes:
+      label: Repository name
+      description: Lowercase kebab-case; also the Worker name.
+      placeholder: example-cafe
+  - type: input
+    id: sector
+    attributes:
+      label: Sector
+      description: What the business is, in a few words.
+      placeholder: Cafe
+  - type: input
+    id: domains
+    attributes:
+      label: Domains
+      description: Primary domain and the domains that redirect to it, if the client has any.
+  - type: input
+    id: current-site
+    attributes:
+      label: Current site
+      description: URL of the site that exists today, if any.
+  - type: textarea
+    id: goals-and-pages
+    attributes:
+      label: Goals and pages
+      description: Who the visitors are, what they should be able to do, pages of the first version.
+  - type: textarea
+    id: content-and-design
+    attributes:
+      label: Content and design
+      description: Who writes the texts; logo, photos, brand material; sites the client likes.
+  - type: textarea
+    id: business-facts
+    attributes:
+      label: Business facts
+      description: Address, phone, WhatsApp, e-mail, hours, social profiles, founding year; what is known.
+  - type: textarea
+    id: accounts
+    attributes:
+      label: Accounts
+      description: Cloudflare account (the client's own or not yet), domain registrar, who holds the logins.
+  - type: input
+    id: target-date
+    attributes:
+      label: Target date
